@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiqi Festival Platformasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Musiqi Festival Platformasi</h1>
+    <p>Dunyada kecirilen en boyuk musiqi festivallarinin siyahisi</p>
+    <input type="text" id="search" placeholder="Festival axtar...">
+</header>
+
+<section id="filters">
+    <select id="genreFilter">
+        <option value="Hamisi">Janr: Hamisi</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="EDM">EDM</option>
+        <option value="Jazz">Jazz</option>
+    </select>
+
+    <select id="cityFilter">
+        <option value="Hamisi">Seher: Hamisi</option>
+        <option value="Baki">Baki</option>
+        <option value="London">London</option>
+        <option value="Berlin">Berlin</option>
+        <option value="New York">New York</option>
+    </select>
+</section>
+
+<section id="festivalList" class="grid"></section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalName"></h2>
+        <p id="modalCity"></p>
+        <p id="modalDate"></p>
+        <p id="modalGenre"></p>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
